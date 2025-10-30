@@ -16,7 +16,8 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 60px auto;
+    /* This now aligns the container to the left */
+    margin: 60px auto 60px 0;
     padding: 40px;
     background: var(--card);
     border-radius: 10px;
@@ -115,6 +116,7 @@ footer {
 
     .container {
         padding: 20px;
-        margin: 20px;
+        /* Aligns to the left on mobile, keeping top/bottom margin */
+        margin: 20px auto 20px 0;
     }
 }
