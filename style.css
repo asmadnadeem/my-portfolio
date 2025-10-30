@@ -1,14 +1,14 @@
 :root {
-    --bg: #0e0e0e;
-    --card: #181818;
-    --text: #e4e4e4;
-    --muted: #a3a3a3;
-    --gold: #c8a64a;
+    --bg: #0f0f0f;
+    --card: #1a1a1a;
+    --text: #eaeaea;
+    --muted: #9b9b9b;
+    --accent: #c8a64a;
 }
 
 body {
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -16,50 +16,51 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
+    margin: 60px auto;
+    padding: 40px;
     background: var(--card);
-    border-radius: 12px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 header {
-    text-align: center;
     margin-bottom: 40px;
 }
 
 h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--accent);
     margin-bottom: 10px;
-    color: var(--gold);
+    text-align: left;
 }
 
 header p {
     color: var(--muted);
-    max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
 }
 
 h2 {
-    text-align: center;
-    font-family: "Playfair Display", serif;
-    color: var(--gold);
-    margin-bottom: 20px;
+    color: var(--accent);
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+    text-align: left;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text);
+    border-bottom: 1px solid #333;
+    padding-bottom: 6px;
+    text-align: left;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-h3 {
-    font-family: "Playfair Display", serif;
-    color: var(--text);
-    border-bottom: 1px solid #333;
-    padding-bottom: 6px;
-    margin-bottom: 12px;
+    gap: 40px;
 }
 
 ul {
@@ -79,19 +80,18 @@ ul li strong {
 }
 
 .contact {
-    text-align: center;
     margin-top: 50px;
+    text-align: left;
 }
 
 .contact a {
     display: inline-block;
-    background: var(--gold);
+    background: var(--accent);
     color: var(--bg);
-    padding: 12px 28px;
+    padding: 10px 24px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    margin-top: 10px;
     transition: 0.3s;
 }
 
@@ -100,12 +100,12 @@ ul li strong {
 }
 
 footer {
-    text-align: center;
-    color: var(--muted);
     margin-top: 40px;
+    color: var(--muted);
     font-size: 13px;
     border-top: 1px solid #2a2a2a;
     padding-top: 20px;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
